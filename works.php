@@ -2,7 +2,8 @@
 <!-- saved from url=(0036)http://nonus.themewoodmen.com/works/ -->
 <html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en" style="padding-top: 60px;"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
-	<title>Works | Nonus</title>
+	 <title>Coralie Foucault</title>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 			<link rel="alternate" type="application/rss+xml" title="Nonus Feed" href="http://nonus.themewoodmen.com/feed/">
@@ -24,7 +25,7 @@
 <script type="text/javascript" src="./Works   Nonus_files/jquery.fitvids.js"></script>
 <script type="text/javascript" src="./Works   Nonus_files/jquery.icheck.min.js"></script>
 <script type="text/javascript" src="./Works   Nonus_files/selectize.min.js"></script>
-<link rel="shortcut icon" href="http://nonus.themewoodmen.com/wp-content/uploads/2013/10/favicon.ico">
+<link rel="shortcut icon" href="favicon.ico">
 <style type="text/css" media="all">
 		
 																																																		
