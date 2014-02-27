@@ -22,22 +22,44 @@
     </style>
 </head>
 <body data-spy="scroll" data-target="#MainNav" data-offset="74">
-<header id="MainHeader" class="parallax" style="background-color:  white;">
+<?php include("header.php") ?>
+<section id="Work" class="parallax" style="background-image: url('images/demo-content/background-image-1.jpg');">
     <div class="container">
-        <section class="row-fluid">
-            <div class="span10 offset1">
-                  <a href="works.php" class="arrow"> 
-                 <img src="images/logo.png" style=" height: 200px;">
-					<span ><h1 style="color:#B8B8B8; font-weight: 300; font-family: Gulim; text-transform: none" >Coralie Foucault</h1></span>	
-					<span ><h2 style="color:#929292; font-family: Arial; text-transform: none" >Interior Design</h2></span>
-              </div>
-			  </a>
+        <h2>
+            Project 3
+        </h2>
+        <section class="preview flexslider row-fluid">
+            <ul class="slides span12">
+                <li>
+                    <ul class="row-fluid">
+                        <li class="span4"><a href="Projects/3/1/work.php"><img src="Projects/3/1/icon.jpg" alt=""></a></li>
+                        <li class="span4"><a href="Projects/3/2/work.php"><img src="Projects/3/2/icon.jpg" alt=""></a></li>
+                        <li class="span4"><a href="Projects/3/3/work.php"><img src="Projects/3/3/icon.jpg" alt=""></a></li>
+                    </ul>
+                  </li>
+              </ul>
+        </section>
+        <section class="full-view row-fluid">
+            <!-- Work details are loaded here with Ajax from external html files -->
         </section>
     </div>
-</header>
-
-
    
+    <div class="container">
+       <div class="row-fluid">
+           <div class="span3">
+                <h4>Contact Me At :</h4>
+                <p>
+                    <a href="mailto:fake@mail.com">foucaultcoralie@gmail.com</a>
+                </p>
+               </div>
+            <div class="span3">
+               </div>
+        </div>
+    </div>
+
+    </section>
+</section>
+
 
 <!-- javascript -->
 <script src="js/jquery.min.js"></script>

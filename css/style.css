@@ -7502,7 +7502,7 @@ h1,
 h2,
 h3,
 h4 {
-  text-transform: uppercase;
+  text-transform: none;
 }
 h1,
 h2,
@@ -7542,8 +7542,6 @@ a:hover {
 }
 #MainNav {
   font-family: Gulim,'Lato', sans-serif;
-  font-size: 0.8em;
-  text-transform: uppercase;
 }
 #MainNav a {
   color: #808080;
