@@ -79,7 +79,7 @@ section.section-emphasis h1 {
 
 	<div id="boxedWrapper">
 	<?php include('header.php')?>	
-	<header id="BlogHeader" style="background-image: url('images/demo-content/background-image-1.jpg')">
+	<header id="BlogHeader" style="background-image: url('images/demo-content/background-image-1.jpg') ; margin-top: 100px">
 							    <div class="container">
 							        <div class="row-fluid">
 							            <div class="span10 offset1">
