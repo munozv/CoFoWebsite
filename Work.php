@@ -3,7 +3,7 @@
 
  $id = 1; 
  
- $maxId = 4;
+ $maxId = 2;
 if (isset($_GET["id"]))
 {
 	$id = $_GET["id"]; 
@@ -35,7 +35,7 @@ if (isset($_GET["id"]))
 <script type="text/javascript" src="./Work/jquery.icheck.min.js"></script>
 <script type="text/javascript" src="./Work/selectize.min.js"></script>
 <script type="text/javascript" src="./Work/comment-reply.min.js"></script><style type="text/css"></style>
-<link rel="shortcut icon" href="http://nonus.themewoodmen.com/wp-content/uploads/2013/10/favicon.ico">
+<link rel="shortcut icon" href="favicon.ico">
 <style type="text/css" media="all">
 		
 																																																		
@@ -104,52 +104,96 @@ section.section-emphasis h1 {
 	
 	<div class="row-fluid">
 			        <div class="span9">
-		        
+		     
 															<div id="flexslider242" class="post-media flexslider " style="height: 466px;">
 						            <div class="sliderBox">
 						                <div class="navFlexFull">
 
-						                <ol class="flex-control-nav flex-control-paging"><li><a class="">1</a></li><li><a class="flex-active">2</a></li></ol><ul class="flex-direction-nav"><li><a class="flex-prev" href="work.php?id=<?php echo $id; ?>/#">Previous</a></li><li><a class="flex-next" href="http://nonus.themewoodmen.com/portfolio/work-<?php echo $id; ?>/#">Next</a></li></ul></div>
+						                <ol class="flex-control-nav flex-control-paging">
+
+
+   <?php 
+								$string = file_get_contents("Items/".$id."/nb.txt", FILE_USE_INCLUDE_PATH);								
+								$i = 1;	
+
+							
+								while($i <= $string)
+									{								
+								?>
+
+									 <!-- 	<li>
+											<a class=""><?php echo $i;?></a>
+											</li>
+													-->										
+											<?php 
+$i++;
+									}
+									?>
+										</ol>
+											<ul class="flex-direction-nav">
+											<li>
+											<a class="flex-prev" href="work.php?id=<?php echo $id; ?>/#">Previous</a>
+											</li>
+											<li>
+											<a class="flex-next" href="work.php?id=<?php echo $id; ?>/#">Next</a>
+											</li>
+											</ul>
+										</div>
 						                <!-- / navFlexFull -->
 						            </div>
-						          <ul class="slides"><li style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;" class="">
+						        <ul class="slides">
+								  <?php 
+					 								$i = 1;			
+								while($i <= $string)
+									{
+									?>
+									
+									<li style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;" class="">
 							
-				              <img src="./Work/work-large-<?php echo $id; ?>.jpg" alt="">
+										<img src="./Items/<?php echo $id."/".$i; ?>.jpg" alt="">
 				            
-				            </li><li style="width: 100%; float: left; margin-right: -100%; position: relative; display: list-item;" class="flex-active-slide">
+									</li>
+									
+									<?php 
+$i++;
+									}
+									?>
+									
+<!--									<li style="width: 100%; float: left; margin-right: -100%; position: relative; display: list-item;" class="flex-active-slide">
 							
-				              <img src="./Work/work-large-8.jpg" alt="">
+										<img src="./Work/work-large-8.jpg" alt="">
 				            
-				            </li></ul>
+									</li> 
+									-->
+								</ul>
 				                  </div>
 				                  <!-- / flexFull -->		    </div>
 	    		<div class="span3">
 								    <nav class="work-nav">
-			    				    <a href="work.php?id=<?php 
+			    				    <a href="work.php?id=<?php
 									if ($id == 1)
 										echo $maxId;
-									else									
-										echo $id - 1;									
+									else
+										echo $id - 1;					
 									?>" class="prev">Previous</a>
 	            			    	                				    <a href="works.php" class="all">All</a>
-	            			    				    <a href="work.php?id=<?php 
+	            			    				    <a href="work.php?id=<?php
 									if ($id == $maxId)
 										echo 1;
-									else									
-										echo $id + 1;									
+									else						
+										echo $id + 1;	
 									?>" class="next">Next</a>
 			    		    </nav>
-				            <h4>Project <?php echo $id; ?></h4>
-	        				           
-
+							           
 <!-- ############## Project Text -->
-									   
-			<p>Aliquam a quam mi, ut ligula. Nulla vel tristique. Donec in massa diam, quis suscipit est.
-			Pellentesque odio urna, bibendum ut fringilla eget, fermentum sodales nisi.</p>
-	        
-			<div class="spacer" style="height: 30px;"></div>
-			<h4><i class="icon-tag"></i> Brand Creation, Design</h4>
-
+					<?php 
+					
+					$text = file_get_contents("Items/".$id."/text.php", FILE_USE_INCLUDE_PATH);																								
+								
+								echo $text;
+								
+								?>
+		
 <!-- ############## END Project Text -->
 
 			</div>
@@ -184,23 +228,23 @@ section.section-emphasis h1 {
 
 
 							<div class="isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
-			                    <a href="http://nonus.themewoodmen.com/portfolio/work-<?php echo $rand1 ?>/">
-			                        <img src="./Work/work-large-<?php echo $rand1 ?>-220x161.jpg" alt="">			                        
+			                    <a href="work.php?id=<?php echo $rand1; ?>">
+			                        <img src="./Items/<?php echo $rand1; ?>/1.jpg" alt="">			                        
 			                    </a>
 			                </div>
 							<div class="isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(240px, 0px, 0px);">
-			                    <a href="http://nonus.themewoodmen.com/portfolio/work-<?php echo $rand2 ?>/">
-			                        <img src="./Work/work-large-<?php echo $rand2 ?>-220x161.jpg" alt="">
+			                    <a href="work.php?id=<?php echo $rand2; ?>">
+			                        <img src="./Items/<?php echo $rand2; ?>/1.jpg" alt="">
 			                    </a>
 			                </div>
 							<div class="isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(480px, 0px, 0px);">
-			                    <a href="http://nonus.themewoodmen.com/portfolio/work-<?php echo $rand3 ?>/">
-			                        <img src="./Work/work-large-<?php echo $rand3 ?>-220x161.jpg" alt="">
+			                    <a href="work.php?id=<?php echo $rand3; ?>">
+			                        <img src="./Items/<?php echo $rand3; ?>/1.jpg" alt="">
 			                    </a>
 			                </div>
 							<div class="isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(720px, 0px, 0px);">
-			                    <a href="http://nonus.themewoodmen.com/portfolio/work-<?php echo $rand4 ?>/">
-			                        <img src="./Work/work-large-<?php echo $rand4 ?>-220x161.jpg" alt="">
+			                    <a href="work.php?id=<?php echo $rand4; ?>">
+			                        <img src="./Items/<?php echo $rand4; ?>/1.jpg" alt="">
 			                    </a>
 			                </div>
 							            

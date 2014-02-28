@@ -106,100 +106,102 @@ section.section-emphasis h1 {
 	
 							<div class="span12">
 							            <!-- ISOTOPE GALLERY -->
-							         <div id="IsotopeContainer" class="isotope col4">
-							                
+							        <div id="IsotopeContainer" class="isotope col4">
+							         
 									<div class="isotope-item interior">
 												<a href="#">
 												<img src="Projects/1/1.jpg" alt="">			                        
 												</a>
-											</div>
+									</div>
 							        <div class="isotope-item product">
 												<a href="#">
 												<img src="Projects/1/2.jpg" alt="">			                        
 												</a>
-											</div>
+									</div>
 							        <div class="isotope-item perso">
 												<a href="#">
 												<img src="Projects/1/3.jpg" alt="">			                        
 												</a>
-											</div>
+									</div>
 							        <div class="isotope-item interior">
 												<a href="#">
 												<img src="Projects/1/4.jpg" alt="">			                        
 												</a>
-											</div>
+									</div>
 							        <div class="isotope-item product">
 												<a href="#">
 												<img src="Projects/1/5.jpg" alt="">			                        
 												</a>
-											</div>
+									</div>
 							        <div class="isotope-item interior">
 												<a href="#">
 												<img src="Projects/1/6.jpg" alt="">			                        
 												</a>
-											</div>
+									</div>
 											<div class="isotope-item perso">
 												<a href="#">
 												<img src="Projects/1/1.jpg" alt="">			                        
 												</a>
-											</div>
+									</div>
 							        <div class="isotope-item product">
 												<a href="#">
 												<img src="Projects/1/2.jpg" alt="">			                        
 												</a>
-											</div>
+									</div>
 							        <div class="isotope-item perso">
 												<a href="#">
 												<img src="Projects/1/3.jpg" alt="">			                        
-												</a>
-											</div>
+							
+							</a>
+									</div>
 							        <div class="isotope-item product">
 												<a href="#">
 												<img src="Projects/1/4.jpg" alt="">			                        
 												</a>
-											</div>
+									</div>
 							        <div class="isotope-item interior">
 												<a href="#">
 												<img src="Projects/1/5.jpg" alt="">			                        
 												</a>
-											</div>
+									</div>
 							        <div class="isotope-item perso">
 												<a href="#">
 												<img src="Projects/1/6.jpg" alt="">			                        
 												</a>
-											</div>
-											<div class="isotope-item interior">
+									</div>
+									
+									<div class="isotope-item interior">
 												<a href="#">
 												<img src="Projects/1/1.jpg" alt="">			                        
 												</a>
-											</div>
+									</div>
 							        <div class="isotope-item interior">
 												<a href="#">
 												<img src="Projects/1/2.jpg" alt="">			                        
 												</a>
-											</div>
+									</div>
 							        <div class="isotope-item perso">
 												<a href="#">
 												<img src="Projects/1/3.jpg" alt="">			                        
 												</a>
-											</div>
+									</div>
 							        <div class="isotope-item product">
 												<a href="#">
 												<img src="Projects/1/4.jpg" alt="">			                        
 												</a>
-											</div>
+									</div>
 							        <div class="isotope-item interior">
 												<a href="#">
 												<img src="Projects/1/5.jpg" alt="">			                        
 												</a>
-											</div>
+									</div>
 							        <div class="isotope-item interior">
 												<a href="#">
 												<img src="Projects/1/6.jpg" alt="">			                        
 												</a>
-											</div>
-							            </div>
-							        </div>
+									</div>
+							     </div>
+							   </div>
 							    </div></section>
 
 	<!--footer-->
