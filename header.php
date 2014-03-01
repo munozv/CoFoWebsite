@@ -11,9 +11,20 @@
                 <ul class="nav nav-pills">                   
                     <li><a href="works.php">Projects</a></li> 
 					<li><a href="biography.php">Biography</a></li>
-                    <li><select onchange="" id="combobox" style="margin-top: 22px; width : 120px; margin-right: -20px " >
-							<option value="en">ENGLISH</option>
-							<option value="fr">FRANCAIS</option>
+                    <li><select style="border: none; margin-top: 22px; width:110px" onchange="
+
+					if (this.value == 'fr')
+					{
+//						window.location.href = 'http://www.google.com';
+					}
+					else if (this.value == 'en')
+					{
+//						window.location.href = 'www.google.com';					
+					}
+					
+					" id="combobox" style="margin-top: 22px; width : 110px;  margin-right: -20px " >
+							<option style="font-family: gulim " value="en">English</option>
+							<option style="font-family: gulim " value="fr">Français</option>
 						</select></li>
                 </ul>
             </div>
