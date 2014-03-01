@@ -3,6 +3,28 @@
 
  $id = 1; 
  
+ 	 // FILTER ARRAY
+									 $array = array(
+									 1 => "interior",
+									 2 => "interior",
+									 5 => "interior",
+									 7 => "interior",
+									 11 => "interior",
+									 12 => "interior",
+									 15 => "interior",
+									 3 => "product",
+									 4 => "product",
+									 6 => "product",
+									 16 => "product",
+									 8 => "perso",
+									 9 => "perso",
+									 10 => "perso",
+									 13 => "perso",
+									 14 => "perso",									 
+									 );
+									 
+									 
+									 
  $maxId = 16;
 if (isset($_GET["id"]))
 {
@@ -39,7 +61,17 @@ if (isset($_GET["id"]))
 <style type="text/css" media="all">
 		
 																																																		
+	.work-nav a {
+	background-color: #25FDE9;
+	}
 	
+	.flexslider .flex-control-paging li a.flex-active {
+background: #25FDE9;
+}
+
+a {
+color: #25FDE9;
+}
 	
 						
 		.pull-left {
@@ -196,7 +228,15 @@ $i++;
 									
 									<div class="spacer" style="height: 30px;"></div>
 
-								<h4><i class="icon-tag"></i> Brand Creation, Design</h4>
+								<h4><i class="icon-tag"></i><?php 
+								if ($array[$id] == "interior")
+								echo "Interior Design";
+								else if ($array[$id] == "product")
+								echo "Product Design";
+								else if ($array[$id] == "perso")
+								echo "Personnal Work";
+								
+								?></h4>
 
 <!-- ############## END Project Text -->
 

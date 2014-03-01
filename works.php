@@ -27,10 +27,26 @@
 <script type="text/javascript" src="./Works   Nonus_files/selectize.min.js"></script>
 <link rel="shortcut icon" href="favicon.ico">
 <style type="text/css" media="all">
-		
-																																																		
-	
-	
+		<!--
+		#25FDE9 TURQUOISE
+		#262626 BLACK
+		-->
+				
+
+
+				
+
+.portfolio-filters .isotope-options > li a.selected {
+background: #25FDE9;
+}
+
+.btn {
+background: #262626;
+}
+
+.btn:hover {
+background: #25FDE9;
+}	
 						
 		.pull-left {
   float: left !important;
@@ -94,10 +110,10 @@ section.section-emphasis h1 {
 							            <div id="IsotopeOptions" class="portfolio-filters">
 							                <span></span>
 							                <ul class="isotope-options">
-							                    <li><a href="#filter=*" class="btn btn-primary btn-small selected">All</a></li>
-												<li><a href="#filter=.interior" class="btn btn-primary btn-small">Interior Design</a></li>
-												<li><a href="#filter=.product" class="btn btn-primary btn-small">Product Design</a></li>
-												<li><a href="#filter=.perso" class="btn btn-primary btn-small">Personal Work</a></li>
+							                    <li><a href="#filter=*" style="font-family: gulim;" class="btn btn-primary btn-small selected">All</a></li>
+												<li><a href="#filter=.interior" style="font-family: gulim;" class="btn btn-primary btn-small">Interior Design</a></li>
+												<li><a href="#filter=.product" style="font-family: gulim;" class="btn btn-primary btn-small">Product Design</a></li>
+												<li><a href="#filter=.perso" style="font-family: gulim;" class="btn btn-primary btn-small">Personal Work</a></li>
 							                </ul>
 							            </div>
 							        </nav>
@@ -108,13 +124,36 @@ section.section-emphasis h1 {
 							            <!-- ISOTOPE GALLERY -->
 							        <div id="IsotopeContainer" class="isotope col4">
 							         <?php
+									 
+									 
+									 // FILTER ARRAY
+									 $array = array(
+									 1 => "interior",
+									 2 => "interior",
+									 5 => "interior",
+									 7 => "interior",
+									 11 => "interior",
+									 12 => "interior",
+									 15 => "interior",
+									 3 => "product",
+									 4 => "product",
+									 6 => "product",
+									 16 => "product",
+									 8 => "perso",
+									 9 => "perso",
+									 10 => "perso",
+									 13 => "perso",
+									 14 => "perso",									 
+									 );
+									 
+									 
 									 $nbProject = 16;
 									 $i = 1;
 									 
 									 while ($i <= 16)
 									 {
 									 ?>
-									 <div class="isotope-item interior">
+									 <div class="isotope-item <?php echo $array[$i]?>">
 												<a href="Work.php?id=<?php echo $i; ?>">
 												<img src="Items/<?php echo $i; ?>/icon.jpg" alt="">			                        
 												</a>
