@@ -3,7 +3,7 @@
 
  $id = 1; 
  
- $maxId = 2;
+ $maxId = 16;
 if (isset($_GET["id"]))
 {
 	$id = $_GET["id"]; 
@@ -190,10 +190,14 @@ $i++;
 					
 					$text = file_get_contents("Items/".$id."/text.php", FILE_USE_INCLUDE_PATH);																								
 								
-								echo $text;
+								echo "<br/>".$text;
 								
 								?>
-		
+									
+									<div class="spacer" style="height: 30px;"></div>
+
+								<h4><i class="icon-tag"></i> Brand Creation, Design</h4>
+
 <!-- ############## END Project Text -->
 
 			</div>
@@ -214,37 +218,37 @@ $i++;
 										do 
 										{
 											$rand2 = rand(1, $maxId);
-										} while ($rand2 == $id);
+										} while ($rand2 == $id || $rand2 == $rand1);
 										do 
 										{
 											$rand3 = rand(1, $maxId);
-										} while ($rand3 == $id);
+										} while ($rand3 == $id || $rand3 == $rand1 || $rand3 == $rand2);
 										do 
 										{
 											$rand4 = rand(1, $maxId);
-										} while ($rand4 == $id);
+										} while ($rand4 == $id || $rand4 == $rand1 || $rand4 == $rand2 || $rand4 == $rand3);
 										
 										 ?>
 
 
 							<div class="isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
 			                    <a href="work.php?id=<?php echo $rand1; ?>">
-			                        <img src="./Items/<?php echo $rand1; ?>/1.jpg" alt="">			                        
+			                        <img src="./Items/<?php echo $rand1; ?>/icon.jpg" alt="">			                        
 			                    </a>
 			                </div>
 							<div class="isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(240px, 0px, 0px);">
 			                    <a href="work.php?id=<?php echo $rand2; ?>">
-			                        <img src="./Items/<?php echo $rand2; ?>/1.jpg" alt="">
+			                        <img src="./Items/<?php echo $rand2; ?>/icon.jpg" alt="">
 			                    </a>
 			                </div>
 							<div class="isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(480px, 0px, 0px);">
 			                    <a href="work.php?id=<?php echo $rand3; ?>">
-			                        <img src="./Items/<?php echo $rand3; ?>/1.jpg" alt="">
+			                        <img src="./Items/<?php echo $rand3; ?>/icon.jpg" alt="">
 			                    </a>
 			                </div>
 							<div class="isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(720px, 0px, 0px);">
 			                    <a href="work.php?id=<?php echo $rand4; ?>">
-			                        <img src="./Items/<?php echo $rand4; ?>/1.jpg" alt="">
+			                        <img src="./Items/<?php echo $rand4; ?>/icon.jpg" alt="">
 			                    </a>
 			                </div>
 							            

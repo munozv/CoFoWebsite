@@ -1,0 +1,1 @@
+Quick sketches of Paris and elsewhere

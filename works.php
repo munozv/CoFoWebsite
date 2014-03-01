@@ -107,7 +107,26 @@ section.section-emphasis h1 {
 							<div class="span12">
 							            <!-- ISOTOPE GALLERY -->
 							        <div id="IsotopeContainer" class="isotope col4">
-							         
+							         <?php
+									 $nbProject = 16;
+									 $i = 1;
+									 
+									 while ($i <= 16)
+									 {
+									 ?>
+									 <div class="isotope-item interior">
+												<a href="Work.php?id=<?php echo $i; ?>">
+												<img src="Items/<?php echo $i; ?>/icon.jpg" alt="">			                        
+												</a>
+									</div>
+									 
+									 <?php
+$i++;
+}
+
+									 ?>
+									 
+									<!--
 									<div class="isotope-item interior">
 												<a href="#">
 												<img src="Projects/1/1.jpg" alt="">			                        
@@ -200,6 +219,8 @@ section.section-emphasis h1 {
 												<img src="Projects/1/6.jpg" alt="">			                        
 												</a>
 									</div>
+									
+									-->
 							     </div>
 							   </div>
 							    </div></section>
