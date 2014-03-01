@@ -11,7 +11,7 @@
                 <ul class="nav nav-pills">                   
                     <li><a href="works.php">Projects</a></li> 
 					<li><a href="biography.php">Biography</a></li>
-                    <li><select style="margin-top: 22px; width : 120px; margin-right: -20px " >
+                    <li><select onchange="" id="combobox" style="margin-top: 22px; width : 120px; margin-right: -20px " >
 							<option value="en">ENGLISH</option>
 							<option value="fr">FRANCAIS</option>
 						</select></li>

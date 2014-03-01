@@ -32,21 +32,20 @@
 		#262626 BLACK
 		-->
 				
+.btn.btn-small:hover {
+background: #25FDE9 0 0;
+}
 
-
-				
-
+	
+		
 .portfolio-filters .isotope-options > li a.selected {
 background: #25FDE9;
+
 }
 
-.btn {
-background: #262626;
-}
 
-.btn:hover {
-background: #25FDE9;
-}	
+
+
 						
 		.pull-left {
   float: left !important;
@@ -110,10 +109,10 @@ section.section-emphasis h1 {
 							            <div id="IsotopeOptions" class="portfolio-filters">
 							                <span></span>
 							                <ul class="isotope-options">
-							                    <li><a href="#filter=*" style="font-family: gulim;" class="btn btn-primary btn-small selected">All</a></li>
-												<li><a href="#filter=.interior" style="font-family: gulim;" class="btn btn-primary btn-small">Interior Design</a></li>
-												<li><a href="#filter=.product" style="font-family: gulim;" class="btn btn-primary btn-small">Product Design</a></li>
-												<li><a href="#filter=.perso" style="font-family: gulim;" class="btn btn-primary btn-small">Personal Work</a></li>
+							                    <li><a href="#filter=*" style="font-family: gulim; text-transform: none;" class="btn btn-primary btn-small selected">All</a></li>
+												<li><a href="#filter=.interior" style="font-family: gulim; text-transform: none;" class="btn btn-primary btn-small">Interior Design</a></li>
+												<li><a href="#filter=.product" style="font-family: gulim; text-transform: none;" class="btn btn-primary btn-small">Product Design</a></li>
+												<li><a href="#filter=.perso" style="font-family: gulim; text-transform: none;" class="btn btn-primary btn-small">Personal Work</a></li>
 							                </ul>
 							            </div>
 							        </nav>
@@ -165,104 +164,24 @@ $i++;
 
 									 ?>
 									 
-									<!--
-									<div class="isotope-item interior">
-												<a href="#">
-												<img src="Projects/1/1.jpg" alt="">			                        
-												</a>
-									</div>
-							        <div class="isotope-item product">
-												<a href="#">
-												<img src="Projects/1/2.jpg" alt="">			                        
-												</a>
-									</div>
-							        <div class="isotope-item perso">
-												<a href="#">
-												<img src="Projects/1/3.jpg" alt="">			                        
-												</a>
-									</div>
-							        <div class="isotope-item interior">
-												<a href="#">
-												<img src="Projects/1/4.jpg" alt="">			                        
-												</a>
-									</div>
-							        <div class="isotope-item product">
-												<a href="#">
-												<img src="Projects/1/5.jpg" alt="">			                        
-												</a>
-									</div>
-							        <div class="isotope-item interior">
-												<a href="#">
-												<img src="Projects/1/6.jpg" alt="">			                        
-												</a>
-									</div>
-											<div class="isotope-item perso">
-												<a href="#">
-												<img src="Projects/1/1.jpg" alt="">			                        
-												</a>
-									</div>
-							        <div class="isotope-item product">
-												<a href="#">
-												<img src="Projects/1/2.jpg" alt="">			                        
-												</a>
-									</div>
-							        <div class="isotope-item perso">
-												<a href="#">
-												<img src="Projects/1/3.jpg" alt="">			                        
-							
-							</a>
-									</div>
-							        <div class="isotope-item product">
-												<a href="#">
-												<img src="Projects/1/4.jpg" alt="">			                        
-												</a>
-									</div>
-							        <div class="isotope-item interior">
-												<a href="#">
-												<img src="Projects/1/5.jpg" alt="">			                        
-												</a>
-									</div>
-							        <div class="isotope-item perso">
-												<a href="#">
-												<img src="Projects/1/6.jpg" alt="">			                        
-												</a>
-									</div>
-									
-									<div class="isotope-item interior">
-												<a href="#">
-												<img src="Projects/1/1.jpg" alt="">			                        
-												</a>
-									</div>
-							        <div class="isotope-item interior">
-												<a href="#">
-												<img src="Projects/1/2.jpg" alt="">			                        
-												</a>
-									</div>
-							        <div class="isotope-item perso">
-												<a href="#">
-												<img src="Projects/1/3.jpg" alt="">			                        
-												</a>
-									</div>
-							        <div class="isotope-item product">
-												<a href="#">
-												<img src="Projects/1/4.jpg" alt="">			                        
-												</a>
-									</div>
-							        <div class="isotope-item interior">
-												<a href="#">
-												<img src="Projects/1/5.jpg" alt="">			                        
-												</a>
-									</div>
-							        <div class="isotope-item interior">
-												<a href="#">
-												<img src="Projects/1/6.jpg" alt="">			                        
-												</a>
-									</div>
-									
-									-->
 							     </div>
 							   </div>
-							    </div></section>
+							    </div>
+								
+								
+								
+									<div class="row-fluid">
+            <div class="span12">
+		
+				 
+				   <h4 style="margin-top:70px; text-align:center">Contact me at</h4>
+                <p style="text-align:center">
+                    <a style="color: #535353" href="mailto:foucaultcoralie@gmail.com">foucaultcoralie@gmail.com</a>
+                </p>
+				 </div>
+        </div>
+		
+		</section>
 
 	<!--footer-->
 	<script type="text/javascript" src="./Works   Nonus_files/jquery.form.min.js"></script>
@@ -282,6 +201,9 @@ var _wpcf7 = {"loaderUrl":"\/wp-content\/themes\/nonus\/theme\/assets\/img\/load
 <script type="text/javascript">
 /* ISOTOPE */
 
+
+
+
 		    jQuery(window).load(function () {
 		        var $container = jQuery("#IsotopeContainer"), // object that will keep track of options
 		            isotopeOptions = {}, // defaults, used if not explicitly set in hash
@@ -292,6 +214,7 @@ var _wpcf7 = {"loaderUrl":"\/wp-content\/themes\/nonus\/theme\/assets\/img\/load
 		                layoutMode: "masonry"
 		            };
 
+					
 
 		        var setupOptions = jQuery.extend({}, defaultOptions, {
 		            itemSelector: ".isotope-item",
@@ -406,7 +329,9 @@ jQuery(document).ready(function () {
 						})
 						return false;
 					});
-				});</script>
+				}
+				
+				);</script>
 	
 
 <!-- switcher -->

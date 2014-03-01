@@ -161,6 +161,9 @@ background-image: url('images/logo-small-turquoise.png');
 
 }
 
+
+
+
 .frontpage_img{
 background: url('../images/logo.png') no-repeat;
 }
@@ -9655,7 +9658,7 @@ blockquote.testimonial .author .name {
 .btn {
   display: inline-block;
   width: auto;
-  background: #25FDE9;
+  background: #262626;
   padding: 0 23px 0 28px;
   -webkit-transition: background .3s ease;
   -moz-transition: background .3s ease;
@@ -9711,7 +9714,7 @@ blockquote.testimonial .author .name {
   padding: 0 19px 0 20px;
 }
 .btn.btn-small:hover {
-  background: #262626 0 0;
+  background: #25FDE9 0 0;
 }
 .btn.btn-block {
   width: 100%;
@@ -10239,7 +10242,7 @@ blockquote.testimonial .author:before {
   font-size: 13px;
 }
 .portfolio-filters .isotope-options > li a.selected {
-  background: #262626;
+  background: #25FDE9;
 }
 .isotope-item {
   display: inline-block;
@@ -10780,7 +10783,7 @@ section > section:first-child {
 }
 #MainNav ul li a:hover {
   background: none;
-  color: #262626;
+  color: #25FDE9;
 }
 #MainNav ul li.active a {
   background: none;

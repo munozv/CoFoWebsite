@@ -60,7 +60,25 @@ if (isset($_GET["id"]))
 <link rel="shortcut icon" href="favicon.ico">
 <style type="text/css" media="all">
 		
-																																																		
+								
+#MainNav ul li a {
+font-family: Gulim;
+text-transform: none;
+}
+
+#MainNav ul li a:hover {
+color: #25FDE9;
+}
+
+.header_img{
+background: url('./images/logo-small.png') no-repeat;
+}
+.header_img:hover{
+background-image: url('./images/logo-small-turquoise.png');
+
+}
+
+								
 	.work-nav a {
 	background-color: #25FDE9;
 	}
@@ -127,7 +145,7 @@ section.section-emphasis h1 {
 													    <div class="row-fluid">
 													        <div class="span12">
 													            <div class="breadcrumbs-inner">
-													                <a href="works.php">Projects</a>&nbsp;&nbsp;/&nbsp;&nbsp;<span>Project <?php echo $id; ?></span>
+													                <a style="font-family: Gulim;" href="works.php">Projects</a>&nbsp;&nbsp;/&nbsp;&nbsp;<span style="font-family: Gulim;">Project <?php echo $id; ?></span>
 													            </div>
 													        </div>
 													    </div>
@@ -216,19 +234,19 @@ $i++;
 										echo $id + 1;	
 									?>" class="next">Next</a>
 			    		    </nav>
-							           
+							    <p style="color: #929292">       
 <!-- ############## Project Text -->
 					<?php 
 					
 					$text = file_get_contents("Items/".$id."/text.php", FILE_USE_INCLUDE_PATH);																								
 								
-								echo "<br/>".$text;
+								echo "".$text;
 								
 								?>
-									
+									</p>
 									<div class="spacer" style="height: 30px;"></div>
 
-								<h4><i class="icon-tag"></i><?php 
+								<h4 style="font-family: Gulim; text-transform: none;; color: #707070"><i class="icon-tag"></i><?php 
 								if ($array[$id] == "interior")
 								echo "Interior Design";
 								else if ($array[$id] == "product")
@@ -245,7 +263,7 @@ $i++;
 
     <div class="spacer" style="height: 30px"></div>
 
-			<h4 class="text-center">Other Project</h4><div class="spacer" style="height: 20px;"></div><div class="row-fluid">
+			<h4 class="text-center" style="font-family: Gulim; text-transform: none; color: #929292">Other Project</h4><div class="spacer" style="height: 20px;"></div><div class="row-fluid">
 							        <div class="span12">
 							            <!-- ISOTOPE GALLERY -->
 							            <div id="IsotopeContainer" class="isotope col4" style="position: relative; overflow: hidden; height: 181px;">
