@@ -150,7 +150,15 @@ Etudiante à <b>l’Académie Charpentier</b> à présent, ma formation a néanm
         </div>
 		<div class="row-fluid">
             <div class="span12">
-		<a href="CoralieFoucault-CV-EN.pdf"  style=" position: absolute;
+		<a href="<?php if ($lang == "en")
+					{
+						echo "CoralieFoucault-CV-EN.pdf";					
+					}
+					else
+					{
+						echo "CoralieFoucault-CV-FR.pdf";
+					}
+					?>"  style=" position: absolute;
 				 left: 440px;
 				 text-align: center; font-family: gulim; text-transform: none;
 				 " class="btn btn-primary btn-small selected">				   <?php

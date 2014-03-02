@@ -81,6 +81,16 @@ if (isset($_GET["id"]))
 <style type="text/css" media="all">
 		
 	
+	.flex-next {
+	background-color: #FF3030;
+	
+	}
+
+	.flex-prev {
+	background-color: #FF3030;
+	
+	}
+	
 .post-media.flexslider .flex-control-paging {
 bottom: -20px;
 z-index: 2;
@@ -222,13 +232,7 @@ $i++;
 									?>
 										</ol>
 											<ul  class="flex-direction-nav">
-											<li>
-											<a class="flex-prev" href="work.php?id=<?php echo $id; ?>/#">Previous</a>
-											</li>
-											<li>
-											<a class="flex-next" href="work.php?id=<?php echo $id; ?>/#">Next</a>
-											</li>
-											</ul>
+										
 										</div>
 						                <!-- / navFlexFull -->
 						            </div>
@@ -279,7 +283,10 @@ $i++;
 <!-- ############## Project Text -->
 					<?php 
 					
+					if ($lang == 'en')
 					$text = file_get_contents("Items/".$id."/text.php", FILE_USE_INCLUDE_PATH);																								
+					else					
+					$text = file_get_contents("Items/".$id."/text-fr.php", FILE_USE_INCLUDE_PATH);																								
 								
 								echo "".$text;
 								
