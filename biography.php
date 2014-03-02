@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<?php 
+
+$lang = "fr";
+if (isset($_GET["lang"]) && $_GET["lang"] == "en")
+{
+	$lang = "en";
+}
+
+
+?>
 <!-- saved from url=(0036)http://nonus.themewoodmen.com/works/ -->
 <html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en" style="padding-top: 60px;"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
@@ -99,7 +109,15 @@ section.section-emphasis h1 {
 							    <div class="container">
 							        <div class="row-fluid">
 							            <div class="span10 offset1">
-							                <h1>Projects</h1>
+							                <h1><?php if ($lang == "en")
+					{
+						echo "Biography";					
+					}
+					else
+					{
+						echo "Biographie";
+					}
+					?></h1>
 							            </div>
 							        </div>
 							    </div>
@@ -108,11 +126,25 @@ section.section-emphasis h1 {
 		<div class="row-fluid">
             <div class="span12">
               <img src="images/demo-content/team/team-2.jpg" style="width: 250px; float: left; margin-right: 30px; margin-bottom: 40px; ">
-                    <p class="info" style="font-family: Gulim; color: #535353; font-size:18px; text-align: justify">
-                    I grew up in the South of France where flaming colors gave me the taste of the colors’ harmony. A taste also developped for the line and the shape thanks to my first teacher, my grandmother who was a fashion designer.</br>
+                    <p class="info" style="margin-top:0px ; font-family: Gulim; color: #535353; font-size:18px; text-align: justify">
+					<?php 
+					if ($lang == "en")
+					{
+						echo "I grew up in the South of France where flaming colors gave me the taste of the colors’ harmony. A taste also developped for the line and the shape thanks to my first teacher, my grandmother who was a fashion designer.</br>
 A voluntee to succeed which has never failed since, after having had my high school degree, I eventually chose my way by integrating an interior design’s school.</br>
 Actually, I am student at the school named «<b>Académie Charpentier</b>». But my education began first by a preliminary year at the school «<b>Camondo</b>» and was enriched by an abroad semester in the well-known american school, <b>Cornell University</b> (Ivy League). Thanks to this exchange program, I got the chance to experience another vision of Interior Design, but I also acquired the capacity to speak fluent english, which will allow me to work in foreign countries later.
-               
+               ";
+					}
+					else
+					{
+						echo "Les pieds dans la mer, la tête au soleil, j’ai grandi dans le sud, où les couleurs flamboyantes m’ont donnée un goût prononcé pour l’harmonie des couleurs.
+Un gout développé également au niveau de la ligne et de la forme, avec une grand-mère couturière comme initiatrice.</br>
+Une volonté de percer qui n’a jamais faillie puisque, après un bac ES à l’école St Michel de Picpus, j’ai finalement concrétisé ma pensée en intégrant une école d’arts appliqués. </br>
+Etudiante à <b>l’Académie Charpentier</b> à présent, ma formation a néanmoins commencé par une année préparatoire à l’Ecole <b>Camondo</b> et a été enrichie par un semestre a l’étranger dans la prestigieuse école américaine, <b>Cornell University</b> (Ivy League). Grâce à cet échange, non seulement j’ai pu découvrir une autre vision de l’Architecture Intérieure, mais également acquérir un certain niveau d’anglais qui me permettra de travailler hors frontières dans  un futur proche.<br/><br/> ";
+					}
+?>					
+					
+					
 </p>			
             </div>
         </div>
@@ -121,10 +153,21 @@ Actually, I am student at the school named «<b>Académie Charpentier</b>». But
 		<a href="CoralieFoucault-CV-EN.pdf"  style=" position: absolute;
 				 left: 440px;
 				 text-align: center; font-family: gulim; text-transform: none;
-				 " class="btn btn-primary btn-small selected">Resume</a>
+				 " class="btn btn-primary btn-small selected">				   <?php
+				   if ($lang == "en")				   
+				   echo "Resume";
+				   else
+				   echo "Curriculum vitae";
+				   ?></a>
 
 				 
-				   <h4 style="margin-top:70px; margin-left:280px">Contact me at</h4>
+				   <h4 style="margin-top:70px; margin-left:280px">
+				   <?php
+				   if ($lang == "en")				   
+				   echo "Contact me at";
+				   else
+				   echo "Contact";				   				   
+				   ?></h4>
                 <p>
                     <a style="margin-left:280px; color: #535353" href="mailto:foucaultcoralie@gmail.com">foucaultcoralie@gmail.com</a>
                 </p>

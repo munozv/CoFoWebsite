@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+<?php 
+
+$lang = "fr";
+if (isset($_GET["lang"]) && $_GET["lang"] == "en")
+{
+	$lang = "en";
+}
+
+
+?>
+
 <!-- saved from url=(0036)http://nonus.themewoodmen.com/works/ -->
 <html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en" style="padding-top: 60px;"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
@@ -98,7 +109,15 @@ section.section-emphasis h1 {
 							    <div class="container">
 							        <div class="row-fluid">
 							            <div class="span10 offset1">
-							                <h1>Projects</h1>
+							                <h1><?php if ($lang == "en")
+					{
+						echo "Projects";					
+					}
+					else
+					{
+						echo "Projets";
+					}
+					?></h1>
 							            </div>
 							        </div>
 							    </div>
@@ -109,10 +128,42 @@ section.section-emphasis h1 {
 							            <div id="IsotopeOptions" class="portfolio-filters">
 							                <span></span>
 							                <ul class="isotope-options">
-							                    <li><a href="#filter=*" style="font-family: gulim; text-transform: none;" class="btn btn-primary btn-small selected">All</a></li>
-												<li><a href="#filter=.interior" style="font-family: gulim; text-transform: none;" class="btn btn-primary btn-small">Interior Design</a></li>
-												<li><a href="#filter=.product" style="font-family: gulim; text-transform: none;" class="btn btn-primary btn-small">Product Design</a></li>
-												<li><a href="#filter=.perso" style="font-family: gulim; text-transform: none;" class="btn btn-primary btn-small">Personal Work</a></li>
+							                    <li><a href="#filter=*" style="font-family: gulim; text-transform: none;" class="btn btn-primary btn-small selected"><?php if ($lang == "en")
+					{
+						echo "All";					
+					}
+					else
+					{
+						echo "Tous";
+					}
+					?></a></li>
+												<li><a href="#filter=.interior" style="font-family: gulim; text-transform: none;" class="btn btn-primary btn-small"><?php if ($lang == "en")
+					{
+						echo "Interior Design";					
+					}
+					else
+					{
+						echo "Architecture d'intérieur";
+					}
+					?></a></li>
+												<li><a href="#filter=.product" style="font-family: gulim; text-transform: none;" class="btn btn-primary btn-small"><?php if ($lang == "en")
+					{
+						echo "Product Design";					
+					}
+					else
+					{
+						echo "Design d'Objets";
+					}
+					?></a></li>
+												<li><a href="#filter=.perso" style="font-family: gulim; text-transform: none;" class="btn btn-primary btn-small"><?php if ($lang == "en")
+					{
+						echo "Personal Work";					
+					}
+					else
+					{
+						echo "Travaux Personnels";
+					}
+					?></a></li>
 							                </ul>
 							            </div>
 							        </nav>
@@ -173,7 +224,7 @@ section.section-emphasis h1 {
 									 {
 									 ?>
 									 <div class="isotope-item <?php echo $array[$nbOrder[$i - 1]]?>">
-												<a href="Work.php?id=<?php echo $nbOrder[$i - 1]; ?>">
+												<a href="Work.php?id=<?php echo $nbOrder[$i - 1]; ?><?php if ($lang == "en") { echo "&lang=en";} ?>">
 												<img src="Items/<?php echo $nbOrder[$i - 1]; ?>/icon.jpg" alt="">			                        
 												</a>
 									</div>
@@ -194,7 +245,12 @@ $i++;
             <div class="span12">
 		
 				 
-				   <h4 style="margin-top:70px; text-align:center">Contact me at</h4>
+				   <h4 style="margin-top:70px; text-align:center">				   <?php
+				   if ($lang == "en")				   
+				   echo "Contact me at";
+				   else
+				   echo "Contact";				   				   
+				   ?></</h4>
                 <p style="text-align:center">
                     <a style="color: #535353" href="mailto:foucaultcoralie@gmail.com">foucaultcoralie@gmail.com</a>
                 </p>

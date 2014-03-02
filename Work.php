@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <?php
 
+
+$lang = "fr";
+if (isset($_GET["lang"]) && $_GET["lang"] == "en")
+{
+	$lang = "en";
+}
+
+
+
  $id = 1; 
  
  	 // FILTER ARRAY
@@ -37,7 +46,15 @@ if (isset($_GET["id"]))
 ?>
 <html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en" style="padding-top: 60px;"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
-	<title>Coralie Foucault - Project <?php echo $id; ?> </title>
+	<title>Coralie Foucault - <?php if ($lang == "en")
+					{
+						echo "Projects";					
+					}
+					else
+					{
+						echo "Projets";
+					}
+					?> <?php echo $id; ?> </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 			<link rel="alternate" type="application/rss+xml" title="Nonus Feed" href="http://nonus.themewoodmen.com/feed/">
@@ -153,7 +170,23 @@ section.section-emphasis h1 {
 													    <div class="row-fluid">
 													        <div class="span12">
 													            <div class="breadcrumbs-inner">
-													                <a style="font-family: Gulim;" href="works.php">Projects</a>&nbsp;&nbsp;/&nbsp;&nbsp;<span style="font-family: Gulim;">Project <?php echo $id; ?></span>
+													                <a style="font-family: Gulim;" href="works.php"><?php if ($lang == "en")
+					{
+						echo "Projects";					
+					}
+					else
+					{
+						echo "Projets";
+					}
+					?></a>&nbsp;&nbsp;/&nbsp;&nbsp;<span style="font-family: Gulim;"><?php if ($lang == "en")
+					{
+						echo "Project";					
+					}
+					else
+					{
+						echo "Projet";
+					}
+					?> <?php echo $id; ?></span>
 													            </div>
 													        </div>
 													    </div>
@@ -233,14 +266,14 @@ $i++;
 										echo $maxId;
 									else
 										echo $id - 1;					
-									?>" class="prev">Previous</a>
-	            			    	                				    <a href="works.php" class="all">All</a>
+									?><?php if ($lang == "en") { echo "&lang=en";} ?>" class="prev">Previous</a>
+	            			    	                				    <a href="works.php<?php if ($lang == "en") { echo "?lang=en";} ?>" class="all">All</a>
 	            			    				    <a href="Work.php?id=<?php
 									if ($id == $maxId)
 										echo 1;
 									else						
 										echo $id + 1;	
-									?>" class="next">Next</a>
+									?><?php if ($lang == "en") { echo "&lang=en";} ?>" class="next">Next</a>
 			    		    </nav>
 							    <p style="color: #929292">       
 <!-- ############## Project Text -->
@@ -254,15 +287,30 @@ $i++;
 									</p>
 									<div class="spacer" style="height: 30px;"></div>
 
-								<h4 style="font-family: Gulim; text-transform: none;; color: #707070"><i class="icon-tag"></i><?php 
-								if ($array[$id] == "interior")
+								<h4 style="font-family: Gulim; text-transform: none;; color: #707070"><i class="icon-tag"></i>
+								
+								<?php if ($lang == "en")
+						{
+							if ($array[$id] == "interior")
 								echo "Interior Design";
 								else if ($array[$id] == "product")
 								echo "Product Design";
 								else if ($array[$id] == "perso")
 								echo "Personnal Work";
+						
+						}
+						else
+						{
+							if ($array[$id] == "interior")
+								echo "Architecture d'intérieur";
+								else if ($array[$id] == "product")
+								echo "Design d'Objets";
+								else if ($array[$id] == "perso")
+								echo "Travaux Personnels";							
+						}
+					?>
 								
-								?></h4>
+								</h4>
 
 <!-- ############## END Project Text -->
 
@@ -270,10 +318,19 @@ $i++;
 	</div>
 
     <div class="spacer" style="height: 30px"></div>
-
-			<h4 class="text-center" style="font-family: Gulim; text-transform: none; color: #929292">Other Project</h4><div class="spacer" style="height: 20px;"></div><div class="row-fluid">
+<!--
+			<h4 class="text-center" style="font-family: Gulim; text-transform: none; color: #929292">
+			
+			<?php if ($lang == "en")
+					{
+						echo "Others Projects";					
+					}
+					else
+					{
+						echo "Autres Projets";
+					}
+					?></h4>--><!--<div class="spacer" style="height: 20px;"></div><div class="row-fluid">
 							        <div class="span12">
-							            <!-- ISOTOPE GALLERY -->
 							            <div id="IsotopeContainer" class="isotope col4" style="position: relative; overflow: hidden; height: 181px;">
 										<?php
 
@@ -298,22 +355,22 @@ $i++;
 
 
 							<div class="isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
-			                    <a href="Work.php?id=<?php echo $rand1; ?>">
+			                    <a href="Work.php?id=<?php echo $rand1; ?><?php if ($lang == "en") { echo "&lang=en";} ?>">
 			                        <img src="./Items/<?php echo $rand1; ?>/icon.jpg" alt="">			                        
 			                    </a>
 			                </div>
 							<div class="isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(240px, 0px, 0px);">
-			                    <a href="Work.php?id=<?php echo $rand2; ?>">
+			                    <a href="Work.php?id=<?php echo $rand2; ?><?php if ($lang == "en") { echo "&lang=en";} ?>">
 			                        <img src="./Items/<?php echo $rand2; ?>/icon.jpg" alt="">
 			                    </a>
 			                </div>
 							<div class="isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(480px, 0px, 0px);">
-			                    <a href="Work.php?id=<?php echo $rand3; ?>">
+			                    <a href="Work.php?id=<?php echo $rand3; ?><?php if ($lang == "en") { echo "&lang=en";} ?>">
 			                        <img src="./Items/<?php echo $rand3; ?>/icon.jpg" alt="">
 			                    </a>
 			                </div>
 							<div class="isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(720px, 0px, 0px);">
-			                    <a href="Work.php?id=<?php echo $rand4; ?>">
+			                    <a href="Work.php?id=<?php echo $rand4; ?><?php if ($lang == "en") { echo "&lang=en";} ?>">
 			                        <img src="./Items/<?php echo $rand4; ?>/icon.jpg" alt="">
 			                    </a>
 			                </div>
@@ -323,7 +380,7 @@ $i++;
 							    </div>	
 	
 
-
+-->
 
 
 										<script type="text/javascript">
