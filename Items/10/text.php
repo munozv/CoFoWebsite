@@ -1,2 +1,1 @@
-Volumetric interpretation of an artwork :<br/>
-How the use of colours renders depth and harmony.
+Creation of a furniture with one module. The identical modules fit together as a puzzle.

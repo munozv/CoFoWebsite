@@ -1,2 +1,2 @@
-Light in a shoecase<br/>
-Catch me if you can<br/> 
+Apartment of a young girl who has a dual personality<br/>
+Duality - Simplicity/Eccentricity

@@ -90,7 +90,7 @@ section.section-emphasis h1 {
  <script src="http://nonus.themewoodmen.com/wp-content/themes/nonus/theme/assets/js/html5shiv.js"></script>
  <![endif]-->
 <style id="css-ddslick" type="text/css">#themeSwitcher .dd-select{ -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; border:0; position:relative; cursor:pointer; white-space:nowrap;}#themeSwitcher .dd-desc { color:#bfbfbf; display:block; overflow: hidden; font-weight:normal; line-height: 1.4em; }#themeSwitcher .dd-selected{ overflow:hidden; display:block; padding:10px; font-weight:bold; font-size:14px; font-family:Arial, sans-serif; text-transform:uppercase; color: #fff;}#themeSwitcher .dd-pointer{ width:0; height:0; position:absolute; right:4px; top:50%; margin-top:-7px;}#themeSwitcher .dd-pointer-down{ background:transparent url(http://frame.themeforest.createit.pl/assets/themewoodmen/images/pointer.png) no-repeat top center; width:20px; height:20px;}#themeSwitcher .dd-pointer-up{}#themeSwitcher .dd-options{top:33px; border-bottom:2px solid #cccccc;  list-style:none;  display:none; position:absolute; z-index:2000; margin:0; padding:0;background:#4d4d4d; overflow:auto; -webkit-border-bottom-right-radius: 3px; -webkit-border-bottom-left-radius: 3px; -moz-border-radius-bottomright: 3px; -moz-border-radius-bottomleft: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; border-bottom: none;}#themeSwitcher .dd-option{ padding:10px; display:block; border-bottom:solid 1px #454545; overflow:hidden; text-decoration:none; font-weight:bold; font-size:14px; font-family:Arial, sans-serif; text-transform:uppercase; color:#bfbfbf; cursor:pointer;-webkit-transition: all 0.25s ease-in-out; -moz-transition: all 0.25s ease-in-out;-o-transition: all 0.25s ease-in-out;-ms-transition: all 0.25s ease-in-out; }#themeSwitcher .dd-options > li:last-child > .dd-option{ border-bottom:none;}#themeSwitcher .dd-option:hover{ background:#454545; color:#fff;}#themeSwitcher .dd-selected-description-truncated { text-overflow: ellipsis; white-space:nowrap; }#themeSwitcher .dd-option-selected { background:#f4d4d4d; }#themeSwitcher .dd-selected-text {width:185px; display:block; overflow:hidden; margin:0; line-height:16px; font-weight:bold; font-size:14px; font-family:Arial, sans-serif;}#themeSwitcher .dd-option-text {margin:0; line-height:16px; font-weight:bold; font-family:Arial, sans-serif;}#themeSwitcher .dd-option-image, .dd-selected-image { vertical-align:middle; float:left; margin-right:5px; max-width:64px;}#themeSwitcher .dd-image-right { float:right; margin-right:15px; margin-left:5px;}#themeSwitcher .dd-container{ position:relative;}#themeSwitcher .dd-selected-text { font-weight:bold}​</style></head>
-		<body class="page page-id-232 page-template page-template-page-portfolio-php menuShadow patnone mp6 top-navbar works hasCtBar" style="">
+		<body class="page page-id-232 page-template page-template-page-portfolio-php menuShadow patnone mp6 top-navbar works hasCtBar" style="margin-top: -25px;">
 
 	<div id="boxedWrapper">
 	<?php include('header.php')?>	
@@ -126,24 +126,44 @@ section.section-emphasis h1 {
 									 
 									 
 									 // FILTER ARRAY
-									 $array = array(
+										 $array = array(
 									 1 => "interior",
 									 2 => "interior",
+									 3 => "interior",
+									 4 => "interior",
 									 5 => "interior",
+									 6 => "interior",
 									 7 => "interior",
-									 11 => "interior",
-									 12 => "interior",
-									 15 => "interior",
-									 3 => "product",
-									 4 => "product",
-									 6 => "product",
-									 16 => "product",
-									 8 => "perso",
-									 9 => "perso",
-									 10 => "perso",
+									 8 => "product",
+									 9 => "product",
+									 10 => "product",
+									 11 => "product",
+									 12 => "perso",
 									 13 => "perso",
-									 14 => "perso",									 
+									 14 => "perso",
+									 15 => "perso",
+									 16 => "perso",									 
 									 );
+									 
+									 	 $nbOrder = array(
+									 1,
+									 2,
+									 16,
+									 7,
+									 11,
+									 8,
+									 15,
+									 3,
+									 10,
+									 6,
+									 5,
+									 12,
+									 9,
+									 10,
+									 4,
+									 14,									 
+									 );
+									 
 									 
 									 
 									 $nbProject = 16;
@@ -152,9 +172,9 @@ section.section-emphasis h1 {
 									 while ($i <= 16)
 									 {
 									 ?>
-									 <div class="isotope-item <?php echo $array[$i]?>">
-												<a href="Work.php?id=<?php echo $i; ?>">
-												<img src="Items/<?php echo $i; ?>/icon.jpg" alt="">			                        
+									 <div class="isotope-item <?php echo $array[$nbOrder[$i - 1]]?>">
+												<a href="Work.php?id=<?php echo $nbOrder[$i - 1]; ?>">
+												<img src="Items/<?php echo $nbOrder[$i - 1]; ?>/icon.jpg" alt="">			                        
 												</a>
 									</div>
 									 

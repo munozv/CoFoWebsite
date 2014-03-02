@@ -4,24 +4,27 @@
  $id = 1; 
  
  	 // FILTER ARRAY
-									 $array = array(
+											
+
+											$array = array(
 									 1 => "interior",
 									 2 => "interior",
+									 3 => "interior",
+									 4 => "interior",
 									 5 => "interior",
+									 6 => "interior",
 									 7 => "interior",
-									 11 => "interior",
-									 12 => "interior",
-									 15 => "interior",
-									 3 => "product",
-									 4 => "product",
-									 6 => "product",
-									 16 => "product",
-									 8 => "perso",
-									 9 => "perso",
-									 10 => "perso",
+									 8 => "product",
+									 9 => "product",
+									 10 => "product",
+									 11 => "product",
+									 12 => "perso",
 									 13 => "perso",
-									 14 => "perso",									 
+									 14 => "perso",
+									 15 => "perso",
+									 16 => "perso",									 
 									 );
+									 
 									 
 									 
 									 
@@ -60,6 +63,11 @@ if (isset($_GET["id"]))
 <link rel="shortcut icon" href="favicon.ico">
 <style type="text/css" media="all">
 		
+	
+.post-media.flexslider .flex-control-paging {
+bottom: -20px;
+z-index: 2;
+}
 								
 #MainNav ul li a {
 font-family: Gulim;
@@ -155,9 +163,9 @@ section.section-emphasis h1 {
 	<div class="row-fluid">
 			        <div class="span9">
 		     
-															<div id="flexslider242" class="post-media flexslider " style="height: 466px;">
+															<div  id="flexslider242" class="post-media flexslider " style="height: 466px;">
 						            <div class="sliderBox">
-						                <div class="navFlexFull">
+						                <div  class="navFlexFull">
 
 						                <ol class="flex-control-nav flex-control-paging">
 
@@ -180,7 +188,7 @@ $i++;
 									}
 									?>
 										</ol>
-											<ul class="flex-direction-nav">
+											<ul  class="flex-direction-nav">
 											<li>
 											<a class="flex-prev" href="work.php?id=<?php echo $id; ?>/#">Previous</a>
 											</li>
@@ -200,7 +208,7 @@ $i++;
 									
 									<li style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;" class="">
 							
-										<img src="./Items/<?php echo $id."/".$i; ?>.jpg" alt="">
+									<a href="./Items/<?php echo $id."/".$i; ?>.jpg"  >	<img src="./Items/<?php echo $id."/".$i; ?>.jpg" alt=""> </a>
 				            
 									</li>
 									
@@ -220,14 +228,14 @@ $i++;
 				                  <!-- / flexFull -->		    </div>
 	    		<div class="span3">
 								    <nav class="work-nav">
-			    				    <a href="work.php?id=<?php
+			    				    <a href="Work.php?id=<?php
 									if ($id == 1)
 										echo $maxId;
 									else
 										echo $id - 1;					
 									?>" class="prev">Previous</a>
 	            			    	                				    <a href="works.php" class="all">All</a>
-	            			    				    <a href="work.php?id=<?php
+	            			    				    <a href="Work.php?id=<?php
 									if ($id == $maxId)
 										echo 1;
 									else						
@@ -290,22 +298,22 @@ $i++;
 
 
 							<div class="isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(0px, 0px, 0px);">
-			                    <a href="work.php?id=<?php echo $rand1; ?>">
+			                    <a href="Work.php?id=<?php echo $rand1; ?>">
 			                        <img src="./Items/<?php echo $rand1; ?>/icon.jpg" alt="">			                        
 			                    </a>
 			                </div>
 							<div class="isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(240px, 0px, 0px);">
-			                    <a href="work.php?id=<?php echo $rand2; ?>">
+			                    <a href="Work.php?id=<?php echo $rand2; ?>">
 			                        <img src="./Items/<?php echo $rand2; ?>/icon.jpg" alt="">
 			                    </a>
 			                </div>
 							<div class="isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(480px, 0px, 0px);">
-			                    <a href="work.php?id=<?php echo $rand3; ?>">
+			                    <a href="Work.php?id=<?php echo $rand3; ?>">
 			                        <img src="./Items/<?php echo $rand3; ?>/icon.jpg" alt="">
 			                    </a>
 			                </div>
 							<div class="isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(720px, 0px, 0px);">
-			                    <a href="work.php?id=<?php echo $rand4; ?>">
+			                    <a href="Work.php?id=<?php echo $rand4; ?>">
 			                        <img src="./Items/<?php echo $rand4; ?>/icon.jpg" alt="">
 			                    </a>
 			                </div>

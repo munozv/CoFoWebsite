@@ -1,1 +1,1 @@
-The song "Ice Dance" by Danny Elfman interpreted with colors, materials and volumes
+Quick sketches of Paris and elsewhere
