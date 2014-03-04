@@ -125,15 +125,19 @@ section.section-emphasis h1 {
 		<section class="container">
 		<div class="row-fluid">
             <div class="span12">
-              <img src="images/demo-content/team/team-2.jpg" style="width: 250px; float: left; margin-right: 30px; margin-bottom: 40px; ">
+              <img src="images/demo-content/team/team-2.jpg" style="width: 276px; float: left; margin-right: 20px; margin-bottom: 40px; ">
                     <p class="info" style="margin-top:0px ; font-family: Gulim; color: #535353; font-size:18px; text-align: justify">
 					<?php 
 					if ($lang == "en")
 					{
-						echo "I grew up in the South of France where flaming colors gave me the taste of the colors’ harmony. A taste also developped for the line and the shape thanks to my first teacher, my grandmother who was a fashion designer.</br>
-A voluntee to succeed which has never failed since, after having had my high school degree, I eventually chose my way by integrating an interior design’s school.</br>
-Actually, I am student at the school named «<b>Académie Charpentier</b>». But my education began first by a preliminary year at the school «<b>Camondo</b>» and was enriched by an abroad semester in the well-known american school, <b>Cornell University</b> (Ivy League). Thanks to this exchange program, I got the chance to experience another vision of Interior Design, but I also acquired the capacity to speak fluent english, which will allow me to work in foreign countries later.
-               ";
+						echo "I grew up in the south of France where vibrant colors of the nature endowed me with a taste for the harmonies of different hues.
+						This taste was later discovered, appreciated and amplified by my first drawing teacher, my grandmother, who was a fashion designer.<br/>
+						A person determined to succeed, I eventually decided on my career by enrolling in an Interior Design school after high school.<br/>
+						I’m currently a full time student at <b>Académie Charpentier</b>, having finished my first year of college at <b>Camondo</b>. Moreover,
+						my education was enriched by a semester abroad at  <b>Cornell University</b> (fall 2013). Thanks to this exchange program, 
+						I got the chance to experience a completely different perspective of Interior Design and acquired more professional skills,
+						especially in software such as Rhinoceros.
+						<br/> <br/><br/>";
 					}
 					else
 					{
@@ -143,14 +147,7 @@ Une volonté de percer qui n’a jamais faillie puisque, après un bac ES à l�
 Etudiante à <b>l’Académie Charpentier</b> à présent, ma formation a néanmoins commencé par une année préparatoire à l’Ecole <b>Camondo</b> et a été enrichie par un semestre a l’étranger dans la prestigieuse école américaine, <b>Cornell University</b> (Ivy League). Grâce à cet échange, non seulement j’ai pu découvrir une autre vision de l’Architecture Intérieure, mais également acquérir un certain niveau d’anglais qui me permettra de travailler hors frontières dans  un futur proche.<br/><br/> ";
 					}
 ?>					
-					
-					
-</p>			
-            </div>
-        </div>
-		<div class="row-fluid">
-            <div class="span12">
-		<a href="<?php if ($lang == "en")
+					<a href="<?php if ($lang == "en")
 					{
 						echo "CoralieFoucault-CV-EN.pdf";					
 					}
@@ -158,9 +155,7 @@ Etudiante à <b>l’Académie Charpentier</b> à présent, ma formation a néanm
 					{
 						echo "CoralieFoucault-CV-FR.pdf";
 					}
-					?>"  style=" position: absolute;
-				 left: 440px;
-				 text-align: center; font-family: gulim; text-transform: none;
+					?>"  style="text-align: center; font-family: gulim; text-transform: none;
 				 " class="btn btn-primary btn-small selected">				   <?php
 				   if ($lang == "en")				   
 				   echo "Resume";
@@ -168,6 +163,13 @@ Etudiante à <b>l’Académie Charpentier</b> à présent, ma formation a néanm
 				   echo "Curriculum vitae";
 				   ?></a>
 
+					
+</p>			
+            </div>
+        </div>
+		<div class="row-fluid">
+            <div class="span12">
+		
 				 
 				   <h4 style="margin-top:70px; margin-left:280px">
 				   <?php
@@ -176,9 +178,9 @@ Etudiante à <b>l’Académie Charpentier</b> à présent, ma formation a néanm
 				   else
 				   echo "Contact";				   				   
 				   ?></h4>
-                <p>
+					<p>
                     <a style="margin-left:280px; color: #535353" href="mailto:foucaultcoralie@gmail.com">foucaultcoralie@gmail.com</a>
-                </p>
+					</p>
 				 </div>
         </div>
 				

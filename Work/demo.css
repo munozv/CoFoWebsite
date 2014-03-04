@@ -111,7 +111,7 @@ form input[type="button"]:hover {
 }
 .post-media.flexslider .flex-direction-nav .flex-prev:hover,
 .post-media.flexslider .flex-direction-nav .flex-next:hover {
-  background-color: #262626 !important;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 .flexslider .flex-direction-nav .flex-prev:hover,

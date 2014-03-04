@@ -2,6 +2,7 @@
 <?php 
 
 $lang = "fr";
+
 if (isset($_GET["lang"]) && $_GET["lang"] == "en")
 {
 	$lang = "en";
@@ -128,13 +129,13 @@ section.section-emphasis h1 {
 							            <div id="IsotopeOptions" class="portfolio-filters">
 							                <span></span>
 							                <ul class="isotope-options">
-							                    <li><a href="#filter=*" style="font-family: gulim; text-transform: none;" class="btn btn-primary btn-small selected"><?php if ($lang == "en")
+							                    <li style="margin-left:0px"><a href="#filter=*" style="font-family: gulim; text-transform: none;" class="btn btn-primary btn-small selected"><?php if ($lang == "en")
 					{
 						echo "All";					
 					}
 					else
 					{
-						echo "Tous";
+						echo "Tout";
 					}
 					?></a></li>
 												<li><a href="#filter=.interior" style="font-family: gulim; text-transform: none;" class="btn btn-primary btn-small"><?php if ($lang == "en")
@@ -143,7 +144,7 @@ section.section-emphasis h1 {
 					}
 					else
 					{
-						echo "Architecture d'intérieur";
+						echo "Architecture Intérieure";
 					}
 					?></a></li>
 												<li><a href="#filter=.product" style="font-family: gulim; text-transform: none;" class="btn btn-primary btn-small"><?php if ($lang == "en")
@@ -152,7 +153,7 @@ section.section-emphasis h1 {
 					}
 					else
 					{
-						echo "Design d'Objets";
+						echo "Design d'Objet";
 					}
 					?></a></li>
 												<li><a href="#filter=.perso" style="font-family: gulim; text-transform: none;" class="btn btn-primary btn-small"><?php if ($lang == "en")
@@ -198,19 +199,20 @@ section.section-emphasis h1 {
 									 
 									 	 $nbOrder = array(
 									 1,
+									 13,
 									 2,
 									 16,
 									 7,
 									 11,
 									 8,
+									  6,
 									 15,
 									 3,
 									 10,
-									 6,
+									
 									 5,
 									 12,
 									 9,
-									 10,
 									 4,
 									 14,									 
 									 );

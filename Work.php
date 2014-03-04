@@ -79,8 +79,45 @@ if (isset($_GET["id"]))
 <script type="text/javascript" src="./Work/comment-reply.min.js"></script><style type="text/css"></style>
 <link rel="shortcut icon" href="favicon.ico">
 <style type="text/css" media="all">
-		
 	
+	.container {
+width: 930px;
+}
+.post-media.flexslider .flex-direction-nav .flex-prev, .post-media.flexslider .flex-direction-nav .flex-next 
+{
+background: transparent url('images/slider-controls.png') no-repeat 11px 15px;
+background-color: rgba(255, 255, 255, 0);
+}	
+
+.post-media.flexslider .flex-direction-nav .flex-prev:hover {
+background: transparent url('images/slider-controls-hover.png') no-repeat 11px 15px;
+left: -20px;
+}
+.post-media.flexslider:hover .flex-direction-nav .flex-prev
+{
+left: -20px;
+}
+
+
+ .post-media.flexslider .flex-direction-nav .flex-next:hover {
+background: transparent url('images/slider-controls-hover.png') no-repeat 11px 15px;
+background-position: -106px 15px;
+right: -20px;
+}
+.post-media.flexslider:hover .flex-direction-nav .flex-next 
+{
+right: -20px;
+}
+.post-media.flexslider .flex-direction-nav .flex-next {
+background-position: -106px 15px;
+right: -20px;
+}	
+
+.post-media.flexslider .flex-direction-nav .flex-prev {
+left: -20px;
+}	
+	
+
 	.flex-next {
 	background-color: #FF3030;
 	
@@ -196,7 +233,24 @@ section.section-emphasis h1 {
 					{
 						echo "Projet";
 					}
-					?> <?php echo $id; ?></span>
+					?> <?php echo $id; ?>
+					
+					  <nav class="work-nav" style="float:right; margin-top:-5px ;">
+			    				    <a href="Work.php?id=<?php
+									if ($id == 1)
+										echo $maxId;
+									else
+										echo $id - 1;					
+									?><?php if ($lang == "en") { echo "&lang=en";} ?>" class="prev">Previous</a>
+	            			    	                				    <a href="works.php<?php if ($lang == "en") { echo "?lang=en";} ?>" class="all">All</a>
+	            			    				    <a href="Work.php?id=<?php
+									if ($id == $maxId)
+										echo 1;
+									else						
+										echo $id + 1;	
+									?><?php if ($lang == "en") { echo "&lang=en";} ?>" class="next">Next</a>
+			    		    </nav>
+							</span>
 													            </div>
 													        </div>
 													    </div>
@@ -245,7 +299,7 @@ $i++;
 									
 									<li style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;" class="">
 							
-									<a href="./Items/<?php echo $id."/".$i; ?>.jpg"  >	<img src="./Items/<?php echo $id."/".$i; ?>.jpg" alt=""> </a>
+										<img src="./Items/<?php echo $id."/".$i; ?>.jpg" alt=""> 
 				            
 									</li>
 									
@@ -264,22 +318,8 @@ $i++;
 				                  </div>
 				                  <!-- / flexFull -->		    </div>
 	    		<div class="span3">
-								    <nav class="work-nav">
-			    				    <a href="Work.php?id=<?php
-									if ($id == 1)
-										echo $maxId;
-									else
-										echo $id - 1;					
-									?><?php if ($lang == "en") { echo "&lang=en";} ?>" class="prev">Previous</a>
-	            			    	                				    <a href="works.php<?php if ($lang == "en") { echo "?lang=en";} ?>" class="all">All</a>
-	            			    				    <a href="Work.php?id=<?php
-									if ($id == $maxId)
-										echo 1;
-									else						
-										echo $id + 1;	
-									?><?php if ($lang == "en") { echo "&lang=en";} ?>" class="next">Next</a>
-			    		    </nav>
-							    <p style="color: #929292">       
+								  
+							    <p style="color: #929292; text-align:right">       
 <!-- ############## Project Text -->
 					<?php 
 					
@@ -294,8 +334,12 @@ $i++;
 									</p>
 									<div class="spacer" style="height: 30px;"></div>
 
-								<h4 style="font-family: Gulim; text-transform: none;; color: #707070"><i class="icon-tag"></i>
-								
+								<a><h4 style="font-family: Gulim; text-transform: none;; color: #707070; text-align:right"><a href="works.php<?php
+
+								if ($lang == "en") { echo "?lang=en";}
+
+								echo "#filter=.".$array[$id];
+								?>"><i class="icon-tag"></i>
 								<?php if ($lang == "en")
 						{
 							if ($array[$id] == "interior")
@@ -309,15 +353,15 @@ $i++;
 						else
 						{
 							if ($array[$id] == "interior")
-								echo "Architecture d'intérieur";
+								echo "Architecture Intérieure";
 								else if ($array[$id] == "product")
-								echo "Design d'Objets";
+								echo "Design d'Objet";
 								else if ($array[$id] == "perso")
 								echo "Travaux Personnels";							
 						}
 					?>
 								
-								</h4>
+								</a></h4>
 
 <!-- ############## END Project Text -->
 

@@ -31,11 +31,12 @@
 						echo "Biographie";
 					}
 					?></a></li>
-                    <li><select style="border: none; margin-top: 22px; width:110px" onchange="
+                    <li><select style="border: none; margin-top: 22px; width:110px; text-transform: none;" onchange="
 				
 					var str = window.location.href;
 					
 					str = str.split('?')[0];
+					str = str.split('#')[0];
 					
 					str = str + '?';
 					
