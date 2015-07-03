@@ -125,7 +125,7 @@ section.section-emphasis h1 {
 		<section class="container">
 		<div class="row-fluid">
             <div class="span12">
-              <img src="images/demo-content/team/team-2.jpg" style="width: 276px; float: left; margin-right: 20px; margin-bottom: 40px; ">
+              <img src="images/demo-content/team/team-2.jpg" style="width: 276px; float: left; margin-right: 20px; margin-top:4px; margin-bottom: 40px; ">
                     <p class="info" style="margin-top:0px ; font-family: Gulim; color: #535353; font-size:18px; text-align: justify">
 					<?php 
 					if ($lang == "en")
@@ -137,14 +137,18 @@ section.section-emphasis h1 {
 						my education was enriched by a semester abroad at  <b>Cornell University</b> (fall 2013). Thanks to this exchange program, 
 						I got the chance to experience a completely different perspective of Interior Design and acquired more professional skills,
 						especially in software such as Rhinoceros.
-						<br/> <br/><br/>";
+						Through this experience I developed the ability to adapt myself to another culture, which will give me the opportunity to build an international career.
+						<br/><br/> <br/>";
 					}
 					else
 					{
 						echo "Les pieds dans la mer, la tête au soleil, j’ai grandi dans le sud, où les couleurs flamboyantes m’ont donnée un goût prononcé pour l’harmonie des couleurs.
 Un gout développé également au niveau de la ligne et de la forme, avec une grand-mère couturière comme initiatrice.</br>
 Une volonté de percer qui n’a jamais faillie puisque, après un bac ES à l’école St Michel de Picpus, j’ai finalement concrétisé ma pensée en intégrant une école d’arts appliqués. </br>
-Etudiante à <b>l’Académie Charpentier</b> à présent, ma formation a néanmoins commencé par une année préparatoire à l’Ecole <b>Camondo</b> et a été enrichie par un semestre a l’étranger dans la prestigieuse école américaine, <b>Cornell University</b> (Ivy League). Grâce à cet échange, non seulement j’ai pu découvrir une autre vision de l’Architecture Intérieure, mais également acquérir un certain niveau d’anglais qui me permettra de travailler hors frontières dans  un futur proche.<br/><br/> ";
+Etudiante à <b>l’Académie Charpentier</b> à présent, ma formation a néanmoins commencé par une année préparatoire à l’Ecole <b>Camondo</b> et a été enrichie par un semestre a 
+l’étranger dans la prestigieuse école américaine, <b>Cornell University</b> (Ivy League). Grâce à cet échange, non seulement j’ai pu découvrir une 
+autre vision de l’Architecture Intérieure, mais également acquérir un certain niveau d’anglais qui me permettra de travailler hors frontières dans 
+ un futur proche.<br/><br/> <br/>";
 					}
 ?>					
 					<a href="<?php if ($lang == "en")
@@ -155,7 +159,7 @@ Etudiante à <b>l’Académie Charpentier</b> à présent, ma formation a néanm
 					{
 						echo "CoralieFoucault-CV-FR.pdf";
 					}
-					?>"  style="text-align: center; font-family: gulim; text-transform: none;
+					?>"  style="text-align: center; font-family: gulim; text-transform: none;margin-left: 295px;
 				 " class="btn btn-primary btn-small selected">				   <?php
 				   if ($lang == "en")				   
 				   echo "Resume";
@@ -171,7 +175,7 @@ Etudiante à <b>l’Académie Charpentier</b> à présent, ma formation a néanm
             <div class="span12">
 		
 				 
-				   <h4 style="margin-top:70px; margin-left:280px">
+				   <h4 style="margin-top:40px; margin-left:290px">
 				   <?php
 				   if ($lang == "en")				   
 				   echo "Contact me at";
@@ -179,7 +183,7 @@ Etudiante à <b>l’Académie Charpentier</b> à présent, ma formation a néanm
 				   echo "Contact";				   				   
 				   ?></h4>
 					<p>
-                    <a style="margin-left:280px; color: #535353" href="mailto:foucaultcoralie@gmail.com">foucaultcoralie@gmail.com</a>
+                    <a style="margin-left:290px; color: #535353" href="mailto:foucaultcoralie@gmail.com">foucaultcoralie@gmail.com</a>
 					</p>
 				 </div>
         </div>

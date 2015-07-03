@@ -91,30 +91,30 @@ background-color: rgba(255, 255, 255, 0);
 
 .post-media.flexslider .flex-direction-nav .flex-prev:hover {
 background: transparent url('images/slider-controls-hover.png') no-repeat 11px 15px;
-left: -20px;
+left: -25px;
 }
 .post-media.flexslider:hover .flex-direction-nav .flex-prev
 {
-left: -20px;
+left: -25px;
 }
 
 
  .post-media.flexslider .flex-direction-nav .flex-next:hover {
 background: transparent url('images/slider-controls-hover.png') no-repeat 11px 15px;
 background-position: -106px 15px;
-right: -20px;
+right: -25px;
 }
 .post-media.flexslider:hover .flex-direction-nav .flex-next 
 {
-right: -20px;
+right: -25px;
 }
 .post-media.flexslider .flex-direction-nav .flex-next {
 background-position: -106px 15px;
-right: -20px;
+right: -25px;
 }	
 
 .post-media.flexslider .flex-direction-nav .flex-prev {
-left: -20px;
+left: -25px;
 }	
 	
 
@@ -216,7 +216,7 @@ section.section-emphasis h1 {
 							<div class="container breadcrumbs">
 													    <div class="row-fluid">
 													        <div class="span12">
-													            <div class="breadcrumbs-inner">
+													            <div class="breadcrumbs-inner" style="margin-top: 10px">
 													                <a style="font-family: Gulim;" href="works.php"><?php if ($lang == "en")
 					{
 						echo "Projects";					

@@ -44,6 +44,9 @@ if (isset($_GET["lang"]) && $_GET["lang"] == "en")
 		#262626 BLACK
 		-->
 				
+				
+				
+				
 .btn.btn-small:hover {
 background: #25FDE9 0 0;
 }
@@ -128,8 +131,23 @@ section.section-emphasis h1 {
 							        <nav class="span12">
 							            <div id="IsotopeOptions" class="portfolio-filters">
 							                <span></span>
-							                <ul class="isotope-options">
-							                    <li style="margin-left:0px"><a href="#filter=*" style="font-family: gulim; text-transform: none;" class="btn btn-primary btn-small selected"><?php if ($lang == "en")
+							                <ul style="
+											
+											
+						<?php if ($lang == "en")
+					{
+						echo "margin-left:17%;";					
+					}
+					else
+					{
+						echo "margin-left:9%;";
+					}
+					?>					
+											
+											
+											" class="isotope-options">
+											
+							                    <li style="margin-left:0px"><a href="#filter=*" style="font-family: gulim; text-transform: none; " class="btn btn-primary btn-small selected"><?php if ($lang == "en")
 					{
 						echo "All";					
 					}
